@@ -3,9 +3,9 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: mongodb
-  namespace: demo
+  namespace: demo-dev
   annotations:
-    flux.weave.works/automated: "false"
+    flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: semver:~4.0
 spec:
   releaseName: mongodb
